@@ -9,7 +9,7 @@ import java.io.InputStream;
 
 public class SqlSessionBuilder {
     public static SqlSession getSqlSession() throws IOException {
-        String resource = "mapper/mybatis-config.xml";
+        String resource = "mybatis/mybatis-config.xml";
         InputStream inputStream = SqlSessionBuilder.class.getClassLoader().getResourceAsStream(resource);
 
         SqlSessionFactory sessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
