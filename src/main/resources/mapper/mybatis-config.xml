@@ -4,10 +4,10 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-    <typeAliases>
+    <!--<typeAliases>-->
         <!--<typeAlias type="org.mybatis.example.User" alias="user"/>-->
         <!--<package name="org.mybatis" />-->
-    </typeAliases>
+    <!--</typeAliases>-->
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
@@ -20,6 +20,6 @@
     </environments>
 
     <mappers>
-        <mapper resource="resources/mapper/ToDoItemMapper.xml"/>
+        <mapper resource="mapper/ToDoItemMapper.xml"/>
     </mappers>
 </configuration>
